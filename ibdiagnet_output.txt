@@ -1,0 +1,195 @@
+Running version: "IBDIAGNET 2.7.0.MLNX20210617.4883fca","IBDIAG 2.1.1.4883fca","IBDM 2.1.1.4883fca","IBIS 3.0.1.e1db3e0"
+Running command: ibdiagnet                                                                                              
+Timestamp: 2022-02-22 15:10:07 IST +0200                                                                                
+----------                                                                                                              
+Load Plugins from:                                                                                                      
+/usr/share/ibdiagnet2.1.1/plugins/                                                                                      
+(You can specify more paths to be looked in with "IBDIAGNET_PLUGINS_PATH" env variable)                                 
+
+Plugin Name                                   Result     Comment
+libibdiagnet_cable_diag_plugin-2.1.1          Succeeded  Plugin loaded
+libibdiagnet_phy_diag_plugin-2.1.1            Succeeded  Plugin loaded
+
+---------------------------------------------
+Discovery                                    
+-I- Discovering ... 42 nodes (6 Switches & 36 CA-s) discovered.
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- NodeDesc finished successfully                                   
+-I- Fabric Discover finished successfully                            
+
+-I- Discovered 42 nodes (6 Switches & 36 CA-s).
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- PortInfo finished successfully                                   
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-W- VS Capability GMP finished with warnings                         
+-W- S043f720300899a00/N043f720300899a08 - No response for MAD VSGeneralInfo
+-W- S043f720300f695e6/N043f720300f695ee - No response for MAD VSGeneralInfo
+-W- S0c42a10300838c6c/N0c42a10300838c74 - No response for MAD VSGeneralInfo
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- VS Capability SMP finished successfully                          
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- VS ExtendedPortInfo finished successfully                        
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Port Info Extended finished successfully                         
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Switch Info retrieving finished successfully                     
+
+-I- Duplicated GUIDs detection finished successfully
+
+-I- Duplicated Node Description detection finished successfully
+
+---------------------------------------------
+Lids Check                                   
+-I- Lids Check finished successfully         
+
+---------------------------------------------
+Links Check                                  
+-I- Links Check finished successfully        
+
+---------------------------------------------
+Subnet Manager                               
+-I- SM Info retrieving finished successfully 
+
+-I- Subnet Manager Check finished successfully
+
+---------------------------------------------
+Port Counters                                
+-I- Retrieving PMClassPortInfo ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Retrieving PMPortSampleControl ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.                    
+-I- Ports counters retrieving finished successfully                                      
+
+-I- Going to sleep for 1 seconds until next counters sample
+-I- Time left to sleep ... 1 seconds.                      
+
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Ports counters retrieving (second time) finished successfully    
+
+-I- Ports counters value Check finished successfully
+
+-I- Ports counters Difference Check (during run) finished successfully
+
+---------------------------------------------
+Nodes Information                            
+-I- Devid: 4099(0x1003), PSID: MT_1090120019, Latest FW Version:2.42.5000
+-I- Devid: 4115(0x1013), PSID: MT_2190110032, Latest FW Version:12.28.2006
+-I- Devid: 4119(0x1017), PSID: MT_0000000008, Latest FW Version:16.33.418 
+-I- Devid: 4123(0x101b), PSID: MT_0000000225, Latest FW Version:20.99.8718
+-I- Devid: 4123(0x101b), PSID: MT_0000000228, Latest FW Version:20.32.2004
+-I- Devid: 52000(0xcb20), PSID: MT_1870110032, Latest FW Version:11.2008.2102
+-I- Devid: 53001(0xcf09), PSID: MT_0000000062, Latest FW Version:27.2008.2500
+-I- Devid: 53001(0xcf09), PSID: MT_0000000837, Latest FW Version:31.2010.1144
+-I- Devid: 54000(0xd2f0), PSID: LNV0000000020, Latest FW Version:27.2010.1202
+-I- Devid: 54000(0xd2f0), PSID: MT_0000000062, Latest FW Version:27.2008.2500
+-I- Devid: 54002(0xd2f2), PSID: MT_0000000836, Latest FW Version:31.2010.1404
+-I- Devid: 54002(0xd2f2), PSID: MT_0000000837, Latest FW Version:31.2010.1144
+-W- FW Check finished with warnings                                          
+
+---------------------------------------------
+Speed / Width checks                         
+-I- Link Speed Check (Compare to supported link speed)
+-E- Links Speed Check finished with errors            
+
+-I- Link Width Check (Compare to supported link width)
+-E- Links Width Check finished with errors            
+-E- Link: smg-ib-sw041/U1/P24<-->S900a840300308e40/N900a840300308e40/P49 - Unexpected width, actual link width is 2x (enable_width1="1x or 2x or 4x", enable_width2="1x or 2x or 4x" therefore final width should be 4x)                                                                                                                                                                    
+
+---------------------------------------------
+Virtualization                               
+-I- Build Virtualization Info DB             
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build VPort Info DB
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build VPort Info DB
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build VPort GUID Info DB
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build VNode Info DB
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build VPort PKey Table DB
+-I- Retrieving... 28/28 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Build Node Description DB
+-I- Retrieving... 7/7 Request Port MADs (0/0 Switch Ports & 7/7 CAs Ports) retrieved.
+
+-I- Virtualization finished successfully
+
+-I- Virtual ports retrieving finished successfully
+
+-I- Virtual ports retrieving finished successfully
+
+---------------------------------------------
+Partition Keys                               
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Partition Keys retrieving finished successfully                  
+
+-I- Partition Keys finished successfully
+
+---------------------------------------------
+Temperature Sensing                          
+-I- Retrieving ... 42/42 nodes (6/6 Switches & 36/36 CA-s) retrieved.
+-I- Temperature Sensing finished successfully                        
+
+---------------------------------------------
+Create IBNetDiscover File                    
+-I- Writing of IBNetdDscover file finished successfully
+
+---------------------------------------------
+Fabric Summary                               
+
+Total Nodes             : 42
+IB Switches             : 6 
+IB Channel Adapters     : 31
+IB Aggregation Nodes    : 5
+IB Routers              : 0
+
+Total number of links   : 58
+Links at 4x2.5          : 4
+Links at 4x14           : 3
+Links at 4x25           : 21
+Links at 4x50           : 23
+Links at 4x100          : 6
+Links at 2x50           : 1
+
+Master SM: Port=1 LID=10 GUID=0x98039b0300952b30 devid=4123 Priority:15 Node_Type=CA Node_Description=smg-ib-svr43 mlx5_0
+Standby SM : No Standby SM
+
+---------------------------------------------
+Summary
+-I- Stage                               Warnings   Errors     Comment
+-I- Discovery                           3          0
+-I- Lids Check                          0          0
+-I- Links Check                         0          0
+-I- Subnet Manager                      0          0
+-I- Port Counters                       0          0
+-I- Nodes Information                   16         0
+-I- Speed / Width checks                0          15
+-I- Virtualization                      0          0
+-I- Partition Keys                      0          0
+-I- Temperature Sensing                 0          0
+-I- Create IBNetDiscover File           0          0
+
+-I- You can find detailed errors/warnings in: /var/tmp/ibdiagnet2/ibdiagnet2.log
+
+
+-I- Database                            : /var/tmp/ibdiagnet2/ibdiagnet2.db_csv
+-I- LST                                 : /var/tmp/ibdiagnet2/ibdiagnet2.lst
+-I- Network dump                        : /var/tmp/ibdiagnet2/ibdiagnet2.net_dump
+-I- Subnet Manager                      : /var/tmp/ibdiagnet2/ibdiagnet2.sm
+-I- Ports Counters                      : /var/tmp/ibdiagnet2/ibdiagnet2.pm
+-I- Nodes Information                   : /var/tmp/ibdiagnet2/ibdiagnet2.nodes_info
+-I- VPorts                              : /var/tmp/ibdiagnet2/ibdiagnet2.vports
+-I- VPorts Pkey                         : /var/tmp/ibdiagnet2/ibdiagnet2.vports_pkey
+-I- Partition keys                      : /var/tmp/ibdiagnet2/ibdiagnet2.pkey
+-I- IBNetDiscover                       : /var/tmp/ibdiagnet2/ibdiagnet2.ibnetdiscover
